@@ -1,0 +1,39 @@
+.site-header {
+	a {
+		text-decoration: none;
+		color: #000;
+		transition: all 0.5s;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.site-branding {
+	@include wrapper();
+	text-align: center;
+	margin: 60px auto;
+}
+
+.main-navigation {
+	border-bottom: 1px solid $color__borders;
+}
+
+.site-title, .site-description {
+	margin: 0;
+}
+
+.menu {
+	@include wrapper();
+	ul {
+		list-style-type: none;
+		text-transform: uppercase;
+		margin: 20px 0;
+		text-align: center;
+	}
+	li {
+		@include font-size(0.8);
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+}

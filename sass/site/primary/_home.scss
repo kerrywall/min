@@ -1,0 +1,12 @@
+.home {
+	.hero {
+		img {
+			@include min-screen(1024px) {
+				height: calc(100vh - 100px);
+				width: 100%;
+				object-fit: cover;
+				object-position: 40% 120%;
+			}
+		}
+	}
+}

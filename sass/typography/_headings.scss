@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__headers;
+}
+
+.site-title {
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: $font__display;
+}
+
+.site-description {
+	text-transform: uppercase;
+	@include font-size(0.8);
+	color: #3a3a3a;
+	font-weight: bold;
+}
+
+
+h2 {
+	@include font-size(1.5);
+}

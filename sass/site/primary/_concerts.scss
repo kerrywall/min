@@ -1,0 +1,37 @@
+.concerts {
+	.entry-header {
+		@include column(12);
+		@include min-screen(1024px) {
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+	.site-events {
+		@include min-screen(1024px) {
+			@include column(9);
+			height: auto;
+		}
+		&.smv {
+			@include min-screen(1024px) {
+				@include column(12);
+			}
+		}
+	}
+	.event {
+		@include min-screen(1024px) {
+			min-height: 340px;
+		}
+	}
+	.sidebar {
+		display: none;
+		@include min-screen(1024px) {
+			@include column(3);
+		}
+		h2 {
+			text-transform: none;
+		}
+		iframe {
+			max-width: 100%;
+		}
+	}
+}
