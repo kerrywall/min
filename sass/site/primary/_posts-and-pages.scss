@@ -1,1 +1,19 @@
 @import 'home';
+
+article.page {
+	padding: 0 10px;
+	@include min-screen(1024px) {
+		@include wrapper();	
+		padding: 0;
+	}
+}
+
+img {
+	height: auto;
+}
+
+.entry-title {
+	@include min-screen(1024px) {
+		margin-top: 40px;
+	}
+}

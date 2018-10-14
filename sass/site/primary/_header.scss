@@ -1,4 +1,5 @@
 .site-header {
+	border-bottom: 1px solid #E7E7E7;
 	a {
 		text-decoration: none;
 		color: #000;
@@ -7,36 +8,36 @@
 	a:hover {
 		text-decoration: underline;
 	}
-}
+	.site-branding {
+		@include wrapper();
+		text-align: center;
+		margin: 60px auto 50px auto;
+	}
 
-.site-branding {
-	@include wrapper();
-	text-align: center;
-	margin: 60px auto;
-}
+	.main-navigation {
+		border-bottom: 1px solid $color__borders;
+		text-align: center;
+	}
 
-.main-navigation {
-	border-bottom: 1px solid $color__borders;
-}
+	.site-title, .site-description {
+		margin: 0;
+	}
 
-.site-title, .site-description {
-	margin: 0;
-}
-
-.menu {
-	@include wrapper();
-	ul {
+	.menu {
+		@include wrapper();
 		list-style-type: none;
 		text-transform: uppercase;
-		margin: 20px 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		text-align: center;
 		padding: 0;
-	}
-	li {
-		@include font-size(0.8);
-		font-weight: bold;
-		letter-spacing: 1px;
-		display: inline-block;
-		margin-right: 20px;
+		
+		li {
+			@include font-size(0.75);
+			font-weight: bold;
+			letter-spacing: 1px;
+			display: inline-block;
+			margin-right: 20px;
+		}
 	}
 }

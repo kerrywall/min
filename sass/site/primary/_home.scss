@@ -1,6 +1,7 @@
 .home {
 	.hero {
 		img {
+			height: auto;
 			@include min-screen(1024px) {
 				height: calc(100vh - 100px);
 				width: 100%;

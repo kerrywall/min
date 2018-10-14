@@ -445,6 +445,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #3a3a3a;
   font-weight: bold; }
 
+.entry-title {
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  font-weight: light; }
+
 h2 {
   font-size: 24px;
   font-size: 1.5rem; }
@@ -490,8 +495,8 @@ big {
   font-size: 125%; }
 
 p, li {
-  font-size: 15.2px;
-  font-size: 0.95rem; }
+  font-size: 14.4px;
+  font-size: 0.9rem; }
 
 p {
   line-height: 1.75; }
@@ -594,49 +599,81 @@ a:hover {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.home .hero img {
+  height: auto; }
+  @media only screen and (min-width: 1024px) {
+    .home .hero img {
+      height: calc(100vh - 100px);
+      width: 100%;
+      object-fit: cover;
+      object-position: 40% 120%; } }
+
+article.page {
+  padding: 0 10px; }
+  @media only screen and (min-width: 1024px) {
+    article.page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0; } }
+
+img {
+  height: auto; }
+
 @media only screen and (min-width: 1024px) {
-  .home .hero img {
-    height: calc(100vh - 100px);
-    width: 100%;
-    object-fit: cover;
-    object-position: 40% 120%; } }
+  .entry-title {
+    margin-top: 40px; } }
 
-.site-header a {
-  text-decoration: none;
-  color: #000;
-  transition: all 0.5s; }
-
-.site-header a:hover {
-  text-decoration: underline; }
-
-.site-branding {
-  max-width: 1170px;
-  margin: 0 auto;
-  text-align: center;
-  margin: 60px auto; }
-
-.main-navigation {
-  border-bottom: 1px solid #d9d9d9; }
-
-.site-title, .site-description {
-  margin: 0; }
-
-.menu {
-  max-width: 1170px;
-  margin: 0 auto; }
-  .menu ul {
+.site-header {
+  border-bottom: 1px solid #E7E7E7; }
+  .site-header a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s; }
+  .site-header a:hover {
+    text-decoration: underline; }
+  .site-header .site-branding {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 60px auto 50px auto; }
+  .site-header .main-navigation {
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center; }
+  .site-header .site-title, .site-header .site-description {
+    margin: 0; }
+  .site-header .menu {
+    max-width: 960px;
+    margin: 0 auto;
     list-style-type: none;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     padding: 0; }
-  .menu li {
-    font-size: 12.8px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-right: 20px; }
+    .site-header .menu li {
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-right: 20px; }
+
+.site-footer {
+  background: #1C1C1C;
+  color: #9E9E9E; }
+  .site-footer .site-title {
+    color: #fff;
+    margin: 0; }
+  .site-footer a {
+    color: #9E9E9E;
+    text-decoration: none; }
+  .site-footer a:hover {
+    text-decoration: underline; }
+  .site-footer .site-info {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center; }
 
 .concerts .entry-header {
   display: inline-block;
@@ -683,6 +720,23 @@ a:hover {
     text-transform: none; }
   .concerts .sidebar iframe {
     max-width: 100%; }
+
+.site-footer {
+  background: #1C1C1C;
+  color: #9E9E9E; }
+  .site-footer .site-title {
+    color: #fff;
+    margin: 0; }
+  .site-footer a {
+    color: #9E9E9E;
+    text-decoration: none; }
+  .site-footer a:hover {
+    text-decoration: underline; }
+  .site-footer .site-info {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center; }
 
 /*--------------------------------------------------------------
 ## Comments
