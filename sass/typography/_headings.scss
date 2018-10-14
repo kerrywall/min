@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+.entry-title {
+	font-family: $font__subheaders;
+	text-align: center;
+	font-weight: light;
+}
+
 
 h2 {
 	@include font-size(1.5);
