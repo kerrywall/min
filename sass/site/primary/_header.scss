@@ -30,10 +30,13 @@
 		text-transform: uppercase;
 		margin: 20px 0;
 		text-align: center;
+		padding: 0;
 	}
 	li {
 		@include font-size(0.8);
 		font-weight: bold;
 		letter-spacing: 1px;
+		display: inline-block;
+		margin-right: 20px;
 	}
 }

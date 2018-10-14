@@ -434,7 +434,9 @@ h1, h2, h3, h4, h5, h6 {
 .site-title {
   font-weight: 800;
   text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  font-size: 2rem; }
 
 .site-description {
   text-transform: uppercase;
@@ -626,12 +628,15 @@ a:hover {
     list-style-type: none;
     text-transform: uppercase;
     margin: 20px 0;
-    text-align: center; }
+    text-align: center;
+    padding: 0; }
   .menu li {
     font-size: 12.8px;
     font-size: 0.8rem;
     font-weight: bold;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-right: 20px; }
 
 .concerts .entry-header {
   display: inline-block;
