@@ -1,0 +1,20 @@
+.site-footer {
+	background: #1C1C1C;
+	color: #9E9E9E;
+	.site-title {
+		color: #fff;
+		margin: 0;
+	}
+	a {
+		color: #9E9E9E;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.site-info {
+		@include wrapper();
+		padding: 50px 0;
+		text-align: center;
+	}
+}
