@@ -20,6 +20,14 @@ get_header();
 			<div class="hero clearfix">
 				<?php the_post_thumbnail(); ?>
 			</div>
+			<div class="copy">
+				<?php if (have_posts()) {
+					while (have_posts()) {
+    					the_post();
+    					the_content(); 
+    				}
+			} ?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
