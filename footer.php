@@ -16,6 +16,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<p class="site-title"><?php bloginfo( 'name' ); ?></p>
+			<p class="copyright">&copy; 2018</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
