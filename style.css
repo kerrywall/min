@@ -603,10 +603,20 @@ a:hover {
   height: auto; }
   @media only screen and (min-width: 1024px) {
     .home .hero img {
-      height: calc(100vh - 100px);
+      height: 80vh;
       width: 100%;
       object-fit: cover;
-      object-position: 40% 120%; } }
+      object-position: 100% 100%; } }
+
+.home .copy {
+  padding: 0 10px; }
+  @media only screen and (min-width: 1024px) {
+    .home .copy {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0;
+      margin-top: 50px;
+      margin-bottom: 50px; } }
 
 article.page {
   padding: 0 10px; }
@@ -622,6 +632,10 @@ img {
 @media only screen and (min-width: 1024px) {
   .entry-title {
     margin-top: 40px; } }
+
+@media only screen and (min-width: 1024px) {
+  .entry-content {
+    margin: 30px 0; } }
 
 .site-header {
   border-bottom: 1px solid #E7E7E7; }
