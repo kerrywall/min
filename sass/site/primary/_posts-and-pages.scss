@@ -22,4 +22,7 @@ img {
 	@include min-screen(1024px) {
 		margin: 30px 0;
 	}
+	a {
+		color: #000;
+	}
 }
