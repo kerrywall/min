@@ -639,6 +639,21 @@ img {
 .entry-content a {
   color: #000; }
 
+.content-area.photos .photo {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 640px) {
+    .content-area.photos .photo {
+      display: inline-block;
+      float: left;
+      width: 33.33333%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
 .site-header {
   border-bottom: 1px solid #E7E7E7; }
   .site-header a {

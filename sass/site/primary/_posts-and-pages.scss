@@ -26,3 +26,13 @@ img {
 		color: #000;
 	}
 }
+
+.content-area.photos {
+	.photo {
+		@include column(12);
+		@include min-screen(640px) {
+			@include column(4);
+		}
+		margin-bottom: 15px;
+	}
+}
