@@ -14,7 +14,26 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php the_post_thumbnail(array(1024,786)); ?>
+	<?php 
+
+		// check if the repeater field has rows of data
+		if( have_rows('photos') ):
+
+		 	// loop through the rows of data
+		    while ( have_rows('photos') ) : the_row();
+
+		        // display a sub field value
+		        echo '<div class="photo"><a href="'.get_sub_field('photo')['url'].'" target="_blank"><img src="' . get_sub_field('photo')['sizes']['featured-large'] . '"></a></div>' ;
+
+		    endwhile;
+
+		else :
+
+		    // no rows found
+
+		endif;
+
+	?>
 
 	<div class="entry-content">
 		<?php
