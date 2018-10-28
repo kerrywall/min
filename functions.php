@@ -159,3 +159,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Make sure featured images are enabled
+add_theme_support( 'post-thumbnails' );
+
+// Add featured image sizes
+add_image_size( 'featured-large', 640, 640, true ); // width, height, crop
+add_image_size( 'featured-small', 320, 147, true );
