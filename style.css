@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #3a3a3a;
   font-weight: bold; }
 
-.entry-title {
+.entry-title, .page-title {
   font-family: "Old Standard TT", serif;
   text-align: center;
   font-weight: light; }
@@ -499,6 +499,9 @@ p, li {
 
 p {
   line-height: 1.75; }
+
+a {
+  color: #000; }
 
 a:hover {
   text-decoration: none; }
@@ -617,10 +620,10 @@ a:hover {
       margin-top: 50px;
       margin-bottom: 50px; } }
 
-article.page {
+article.page, .error-404 {
   padding: 0 10px; }
   @media only screen and (min-width: 1024px) {
-    article.page {
+    article.page, .error-404 {
       max-width: 960px;
       margin: 0 auto;
       padding: 0; } }
@@ -633,11 +636,40 @@ img {
     margin-top: 40px; } }
 
 @media only screen and (min-width: 1024px) {
-  .entry-content {
+  .entry-content, .page-content {
     margin: 30px 0; } }
 
-.entry-content a {
+.entry-content a, .page-content a {
   color: #000; }
+
+.entry-content p:first-child, .page-content p:first-child {
+  margin-top: 0; }
+
+.smaller-photo {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+  margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .smaller-photo {
+      display: inline-block;
+      float: left;
+      width: 33.33333%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+  @media only screen and (min-width: 768px) {
+    .smaller-photo.right {
+      float: right; } }
+  @media only screen and (min-width: 768px) {
+    .smaller-photo ~ .entry-content {
+      display: inline-block;
+      float: left;
+      width: 66.66667%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%;
+      margin-top: 0; } }
 
 .content-area.photos .photo {
   display: inline-block;
