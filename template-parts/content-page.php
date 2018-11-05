@@ -14,7 +14,15 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php the_post_thumbnail(array(1024,786)); ?>
+	<?php if(get_field('photo_position') == "centre") {
+		the_post_thumbnail(array(1024,786));
+	} else {
+		echo '<div class="smaller-photo '.get_field('photo_position').'">' . get_the_post_thumbnail() . '</div>';
+	}
+
+	?>
+	
+	<?php  ?>
 
 	<div class="entry-content">
 		<?php
