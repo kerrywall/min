@@ -18,6 +18,7 @@
 
 		// check if the repeater field has rows of data
 		if( have_rows('photos') ):
+			echo '<div class="photos clearfix">';
 
 		 	// loop through the rows of data
 		    while ( have_rows('photos') ) : the_row();
@@ -26,6 +27,8 @@
 		        echo '<div class="photo"><a href="'.get_sub_field('photo')['url'].'" target="_blank"><img src="' . get_sub_field('photo')['sizes']['featured-large'] . '"></a></div>' ;
 
 		    endwhile;
+
+		    echo '</div>';
 
 		else :
 
