@@ -13,6 +13,7 @@ img {
 }
 
 .entry-title {
+	visibility: hidden;
 	@include min-screen(1024px) {
 		margin-top: 40px;
 	}
@@ -56,5 +57,22 @@ img {
 			@include column(4);
 		}
 		margin-bottom: 15px;
+	}
+}
+
+.teaching-event {
+	margin-bottom: 30px;
+	.event-photo {
+		@include column(12);
+		@include min-screen(1024px) {
+			@include column(4);
+		}
+	}
+	p {
+		@include column(12);
+		@include min-screen(1024px) {
+			@include column(8);
+			margin-top: 0;
+		}
 	}
 }
