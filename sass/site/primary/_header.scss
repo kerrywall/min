@@ -2,7 +2,7 @@
 	border-bottom: 1px solid #E7E7E7;
 	a {
 		text-decoration: none;
-		color: #000;
+		color: #333;
 		transition: all 0.5s;
 	}
 	a:hover {
@@ -17,6 +17,9 @@
 	.main-navigation {
 		border-bottom: 1px solid $color__borders;
 		text-align: center;
+		a {
+			color: #666;
+		}
 	}
 
 	.site-title, .site-description {
