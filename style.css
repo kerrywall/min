@@ -453,6 +453,9 @@ h2 {
   font-size: 24px;
   font-size: 1.5rem; }
 
+.main-navigation {
+  font-family: "Old Standard TT", serif; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -631,9 +634,11 @@ article.page, .error-404 {
 img {
   height: auto; }
 
-@media only screen and (min-width: 1024px) {
-  .entry-title {
-    margin-top: 40px; } }
+.entry-title {
+  visibility: hidden; }
+  @media only screen and (min-width: 1024px) {
+    .entry-title {
+      margin-top: 40px; } }
 
 @media only screen and (min-width: 1024px) {
   .entry-content, .page-content {
@@ -686,11 +691,41 @@ img {
       padding-left: 1.04167%;
       padding-right: 1.04167%; } }
 
+.teaching-event {
+  margin-bottom: 30px; }
+  .teaching-event .event-photo {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; }
+    @media only screen and (min-width: 1024px) {
+      .teaching-event .event-photo {
+        display: inline-block;
+        float: left;
+        width: 33.33333%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%; } }
+  .teaching-event p {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; }
+    @media only screen and (min-width: 1024px) {
+      .teaching-event p {
+        display: inline-block;
+        float: left;
+        width: 66.66667%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%;
+        margin-top: 0; } }
+
 .site-header {
   border-bottom: 1px solid #E7E7E7; }
   .site-header a {
     text-decoration: none;
-    color: #000;
+    color: #333;
     transition: all 0.5s; }
   .site-header a:hover {
     text-decoration: underline; }
@@ -702,6 +737,8 @@ img {
   .site-header .main-navigation {
     border-bottom: 1px solid #d9d9d9;
     text-align: center; }
+    .site-header .main-navigation a {
+      color: #666; }
   .site-header .site-title, .site-header .site-description {
     margin: 0; }
   .site-header .menu {
