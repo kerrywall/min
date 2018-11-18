@@ -18,7 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="hero clearfix">
-				<?php the_post_thumbnail(); ?>
+				<a href="about"><?php the_post_thumbnail(); ?></a>
 			</div>
 			<div class="copy">
 				<?php if (have_posts()) {
