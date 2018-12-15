@@ -621,7 +621,11 @@ a:hover {
       margin: 0 auto;
       padding: 0;
       margin-top: 50px;
-      margin-bottom: 50px; } }
+      margin-bottom: 50px;
+      font-family: "Old Standard TT", serif; } }
+  .home .copy span {
+    border: 1px solid #000;
+    padding: 20px; }
 
 article.page, .error-404 {
   padding: 0 10px; }
@@ -699,11 +703,11 @@ img {
     width: 100%;
     padding-left: 1.04167%;
     padding-right: 1.04167%; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       .teaching-event .event-photo {
         display: inline-block;
         float: left;
-        width: 33.33333%;
+        width: 25%;
         padding-left: 1.04167%;
         padding-right: 1.04167%; } }
   .teaching-event p {
@@ -712,14 +716,71 @@ img {
     width: 100%;
     padding-left: 1.04167%;
     padding-right: 1.04167%; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       .teaching-event p {
+        margin-left: 8.33333%;
         display: inline-block;
         float: left;
         width: 66.66667%;
         padding-left: 1.04167%;
         padding-right: 1.04167%;
         margin-top: 0; } }
+
+.music section {
+  margin-bottom: 50px; }
+
+.recording {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 640px) {
+    .recording {
+      display: inline-block;
+      float: left;
+      width: 33.33333%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+
+.audio {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+  margin-bottom: 50px; }
+  .audio audio {
+    width: 100%; }
+  .audio h3 {
+    margin-top: 0; }
+
+.video {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%; }
+  @media only screen and (min-width: 768px) {
+    .video {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; } }
+  .video .embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 15px; }
+    .video .embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 .site-header {
   border-bottom: 1px solid #E7E7E7; }
